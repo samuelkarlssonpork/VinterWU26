@@ -1,1 +1,109 @@
-/* Här skrivs all din CSS */
+body{
+    background-color:rgb( 190, 230, 209);
+}
+
+#wrapper_index{
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    padding: 3px;
+    gap: 5px;
+    grid-template-columns:80% 20% ;
+    grid-template-rows: 13% 7% 55% 25%;
+    grid-template-areas: 
+    'hed div'
+    'nav div'
+    'man div'
+    'fot div'
+}
+
+#wrapper_säkerhet{
+    display: grid;
+    height: 100vh;
+    width: 95vw;
+    padding: 3px;
+    gap: 5px;
+    grid-template-columns:40% 30% 30%;
+    grid-template-rows:13% 7%  50%  30%;
+    grid-template-areas: 
+    'hed hed div'
+    'nav nav div'
+    'art div2 div'
+    'fot fot div'
+}
+
+header{
+    background-color: rgb(48, 102, 73);
+    grid-area: hed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#headerbild{
+    margin-left: -20%;
+    margin-top: 3%;
+    height: 80%;
+    width: 20%;
+}
+
+#säkerhetbild{
+    margin-left: -20%;
+    margin-top: 3%;
+    height: 80%;
+    width: 20%;
+}
+
+h1{
+    font-size: 250%;
+    background-color: aliceblue;
+    border: 6px solid rgb(0, 0, 0);
+    border-radius: 15px;
+    margin-left: 5%;
+}
+
+nav{
+    background-color: rgb(48, 102, 73);
+    grid-area: nav;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#link{
+    margin-left: 10%;
+    margin-right: 10%;
+    color: rgb(190, 230, 209);
+}
+
+#link:active{
+    color: rgb(102, 48, 63);
+}
+
+.inside{
+    background-color: rgb(190, 230, 209);
+    grid-area: div;
+}
+
+.inside2{
+    grid-area: div2;
+    background-color: rgb( 190, 230, 209);
+}
+
+footer{
+    background-color: rgb(48, 102, 73);
+    grid-area: fot;
+}
+
+article{
+    background-color: rgb(48, 102, 73);
+    grid-area: art;
+}
+
+main{
+    background-color: rgb(102, 48, 63);
+    grid-area: man;
+    display: flex;
+    
+}
