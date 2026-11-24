@@ -1,14 +1,22 @@
+@font-face {
+    font-family: coolfont;
+    src: url(../misc/BBHBogle-Regular.ttf);
+}
+
 body{
-    background-color:rgb( 190, 230, 209);
+    overflow-x: hidden;
+    background-image: url(../img/Klätter.webp);
+    background-size: auto;
+    background-repeat: no-repeat;
 }
 
 #wrapper_index{
     display: grid;
-    height: 100vh;
+    height: 110vh;
     width: 100vw;
     padding: 3px;
     gap: 5px;
-    grid-template-columns:80% 20% ;
+    grid-template-columns:85% 15% ;
     grid-template-rows: 13% 7% 55% 25%;
     grid-template-areas: 
     'hed div'
@@ -20,7 +28,7 @@ body{
 #wrapper_säkerhet{
     display: grid;
     height: 100vh;
-    width: 95vw;
+    width: 100vw;
     padding: 3px;
     gap: 5px;
     grid-template-columns:40% 30% 30%;
@@ -33,11 +41,19 @@ body{
 }
 
 header{
-    background-color: rgb(48, 102, 73);
     grid-area: hed;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#indexh1{
+    font-family: coolfont;
+    word-spacing: 10px;
+    letter-spacing: 2.5px;
+    padding-inline: 20px;
+    border: none;
+    background: none;
 }
 
 #headerbild{
@@ -56,8 +72,9 @@ header{
 
 h1{
     font-size: 250%;
-    background-color: aliceblue;
-    border: 6px solid rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    background-color: rgb(48, 102, 73);
+    border: 6px solid rgb(190, 230, 209);
     border-radius: 15px;
     margin-left: 5%;
 }
@@ -68,6 +85,8 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 5px solid rgb(190, 230, 209);
+    border-radius: 7px;
 }
 
 
@@ -92,18 +111,70 @@ nav{
 }
 
 footer{
-    background-color: rgb(48, 102, 73);
+    background-color: rgb(39, 39, 39);
     grid-area: fot;
+    border: 5px solid rgb(0, 0, 0);
+    border-radius: 7px;
+    color: rgb(237, 237, 237);
 }
 
 article{
     background-color: rgb(48, 102, 73);
     grid-area: art;
+    border: 5px solid rgb(190, 230, 209);
+    border-radius: 7px;
 }
 
 main{
-    background-color: rgb(102, 48, 63);
     grid-area: man;
-    display: flex;
-    
 }
+
+.container{
+    display:flex;
+    justify-content: center;
+}
+
+.card{
+    background-color: rgb(255, 255, 255);
+    margin: 10px;
+    height: 80%;
+    width: 35%;
+    margin-top: 10%;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 10px;
+}
+
+.card:hover{
+    background-color: rgb(33, 33, 33);
+    color: white;
+    scale: 1.03;
+    cursor: pointer;
+    transition: all 1s ease;
+}
+
+.imgblock{
+    height: 60%;
+    width: 100%;
+}
+
+.cardimg{
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+}
+
+.h2card{
+    display: flex;
+    justify-content: center;
+    margin-top: 1%;
+    font-size: 1.2rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+p{
+    display: flex;
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 3px;
+}
+
